@@ -5,7 +5,7 @@ import MovieList from "./components/MovieList";
 import MovieListHeading from "./components/MovieListHeading";
 import SearchBox from "./components/SearchBox";
 import AddFavourites from "./components/AddFavourites";
-import RemoveFavourite from "./components/RemoveFavourite";
+import RemoveFavourite from "./components/removeFavourite";
 
 function App() {
   const [movies, setMovies] = useState([]);
