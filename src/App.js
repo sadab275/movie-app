@@ -40,13 +40,14 @@ function App() {
   };
 
   const addFavouriteMovie = (movie) => {
-    const newFavouriteList = [...favourites, movie];
+    // const newFavouriteList = [...favourites, movie];
+    const newFavouriteList = favourites ? [...favourites, movie] : [movie];
     setFavourites(newFavouriteList);
     saveToLocalStorage(newFavouriteList);
   };
 
   const removeFavourite = (movie) => {
-    const newFavouriteList = favourites.filter(
+    const newFavouriteList = favourites?.filter(
       (favourite) => favourite.imdbID !== movie.imdbID
     );
 
